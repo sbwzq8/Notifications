@@ -60,6 +60,7 @@ public class Task2 extends Thread {
         for (Notification notification : notifications) {
             Platform.runLater(() -> {
                 notification.handle(message);
+                
             });
         }
     }
